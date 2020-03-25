@@ -1,0 +1,31 @@
+Installing Node.js and npm from NodeSource
+
+NodeSource is a company focused on providing enterprise-grade Node support and they maintain a repository containing the latest versions of Node.js.
+
+Use this repository if you need to install a specific version of Node.js. At the time of writing, NodeSource repository provides the following versions - v12.x, v11.x, v10.x, and v8.x. We’ll install the current LTS version of Node.js, version 10.x, Carbon.
+
+To install Node.js and npm from the NodeSource repository, follow these steps:
+
+    Enable the NodeSource repository by running the following curl as a user with sudo privileges:
+
+    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+
+    The command will add the NodeSource signing key to your system, create an apt sources repository file, install all necessary packages and refresh the apt cache.
+
+    If you need to install another version, for example 12.x, just change setup_10.x with setup_12.x
+
+    Once the NodeSource repository is enabled, install Node.js and npm by typing:
+
+    sudo apt install nodejs
+
+    The nodejs package contains both the node and npm binaries.
+
+    Verify that the Node.js and npm were successfully installed by printing their versions:
+
+    node --version
+
+    v10.16.3
+
+    npm --version
+
+    6.9.0
