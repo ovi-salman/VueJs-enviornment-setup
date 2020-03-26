@@ -1,0 +1,9 @@
+------------------------------
+uvejs setup
+npm install vue
+------------------------------
+vue-cli setup
+npm install -g @vue/cli
+# OR
+yarn global add @vue/cli
+-----------------------------
