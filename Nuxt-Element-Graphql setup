@@ -1,0 +1,31 @@
+--------------------------
+clone github repo
+git clone https://github.com/godeveloper209/nuxt-element-graphql.git
+--------------------------
+go to repo folder
+cd nuxt-element-graphql
+--------------------------
+go to fontend
+cd frontend
+--------------------------
+install packages
+npm install
+--------------------------
+
+Now go to backend
+cd backend
+--------------------------
+install dependencies to install composer.json packages
+sudo apt install udo
+sudo apt-get install php-xml
+sudo apt-get install -y php-pdo-mysql
+sudo apt-get install php7.3-mysql
+--------------------------
+install packages
+composer install
+--------------------------
+Create and populate main database
+php artisan migrate --seed
+-------------------------
+Run API server on locahost
+php artisan serve
